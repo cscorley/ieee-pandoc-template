@@ -1,0 +1,18 @@
+---
+title: Hey hey you you I don't like your ti-tle
+classoption:
+    - conference
+author:
+    - name: Christop
+      affiliation: University of Butts
+keyword:
+      - yeah yeah yeah
+      - no no no
+biblio-files: papers
+bibliography: papers
+biblio-style: IEEEtranN-nourl
+abstract: |
+    lorem buttsum
+...
+
+
