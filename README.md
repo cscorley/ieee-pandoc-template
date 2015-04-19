@@ -1,6 +1,6 @@
 # ieee-pandoc-template
 
-hi, [welcome to heck](https://www.youtube.com/watch?v=Im6A_eTF01s)
+hi, [welcome to heck](https://youtu.be/Im6A_eTF01s?t=745)
 
 todo:
 
