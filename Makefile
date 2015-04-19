@@ -1,14 +1,5 @@
 PAPER 		= paper
 
-LATEX 		= pdflatex
-BIBTEX		= bibtex
-
-GRAPHICS	= graphics
-
-EPS_GFX		= $(shell echo $(GRAPHICS)/*.eps)
-GEN_GFX 	= $(addsuffix .pdf, $(basename $(EPS_GFX)))
-GFX_FILES	= #$(GEN_GFX)
-
 CLS_FILES	= $(shell find . -name '*.cls')
 TEX_FILES	= $(shell find . -name '*.tex')
 BIB_FILES	= $(shell find . -name '*.bib')
@@ -16,9 +7,12 @@ FIG_FILES	= $(shell find ./figures)
 MD_FILES	= $(shell find ./sections -name '*.md' | sort)
 EXTRA_FILES	= $(shell find ./extra -name '*.md' | sort)
 
-DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(GFX_FILES) $(MD_FILES) $(FIG_FILES)
+DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(MD_FILES) $(FIG_FILES)
 
 all: $(PAPER).pdf
+
+edit:
+	$(EDITOR) $(MD_FILES)
 
 $(PAPER).pdf: $(PAPER).tex
 	pdflatex $(PAPER) || bibtex $(PAPER)
