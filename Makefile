@@ -11,8 +11,12 @@ DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(LATEX_FILES) $(MD
 
 all: $(PAPER).pdf
 
-edit:
-	$(EDITOR) $(MD_FILES)
+.ONESHELL edit:
+	make view &> /dev/null
+	while true; \
+		do inotifywait -r -e modify,attrib,close_write,move,create,delete . && \
+		make; done &> /dev/null &
+	$(EDITOR) $(MD_FILES) && kill %1
 
 $(PAPER).pdf: $(PAPER).tex
 	pdflatex $(PAPER) || bibtex $(PAPER)
