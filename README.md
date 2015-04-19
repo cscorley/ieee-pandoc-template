@@ -2,6 +2,10 @@
 
 hi, [welcome to heck](https://www.youtube.com/watch?v=Im6A_eTF01s)
 
+todo:
+
+- figure out arxiv generation
+
 ## usage
 
 ### metadata
