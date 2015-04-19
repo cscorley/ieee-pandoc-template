@@ -1,13 +1,13 @@
 PAPER 		= paper
 
 CLS_FILES	= $(shell find . -name '*.cls')
-TEX_FILES	= $(shell find . -name '*.*tex')
+LATEX_FILES = $(shell find . -name '*.latex')
 BIB_FILES	= $(shell find . -name '*.bib')
 FIG_FILES	= $(shell find ./figures)
 MD_FILES	= $(shell find ./sections -name '*.md' | sort)
 EXTRA_FILES	= $(shell find ./extra -name '*.md' | sort)
 
-DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(TEX_FILES) $(MD_FILES) $(FIG_FILES)
+DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(LATEX_FILES) $(MD_FILES) $(FIG_FILES)
 
 all: $(PAPER).pdf
 
