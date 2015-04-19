@@ -7,7 +7,7 @@ FIG_FILES	= $(shell find ./figures)
 MD_FILES	= $(shell find ./sections -name '*.md' | sort)
 EXTRA_FILES	= $(shell find ./extra -name '*.md' | sort)
 
-DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(MD_FILES) $(FIG_FILES)
+DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(TEX_FILES) $(MD_FILES) $(FIG_FILES)
 
 all: $(PAPER).pdf
 
