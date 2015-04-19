@@ -2,7 +2,7 @@
 
 butts [@Corley-etal_2011]
 
-![Cool figure](figures/example)
+![Cool figure](example)
 
 # Conclusion
 
