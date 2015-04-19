@@ -51,3 +51,14 @@ clean: tidy
 	$(RM) $(PAPER).tex
 	$(RM) $(PAPER).html
 	$(RM) -r tmp
+
+
+OS = $(shell uname -s)
+ifeq ($(strip $(OS)),Linux)
+	PDF_VIEW = xdg-open
+else
+	PDF_VIEW = open -a /Applications/Preview.app
+endif
+
+view: $(PAPER).pdf
+	$(PDF_VIEW) $(PAPER).pdf &
