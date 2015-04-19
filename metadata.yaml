@@ -1,18 +1,29 @@
 ---
-title: Hey hey you you I don't like your ti-tle
+biblio-files: papers
+biblio-style: IEEEtranN-nourl # custom BST to ignore URLs in papers.bib
+
 classoption:
     - conference
+
+title: "Hey hey you you I don't like your ti-tle: An empirical study"
+
 author:
     - name: Christop
       affiliation: University of Butts
+      location: Buttville, USA
+      email: cscorley@ua.edu
+    - name: Bubbie, Pigpen
+      affiliation: Cat Institute
+      email: \{cat1, cat2\}\@cat.cat
+
 keyword:
       - yeah yeah yeah
       - no no no
-biblio-files: papers
-bibliography: papers
-biblio-style: IEEEtranN-nourl
+
 abstract: |
     lorem buttsum
+
+# don't delete this line, bud
 ...
 
 

@@ -1,10 +1,5 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{IEEEtran}
 
-$if(fontfamily)$
-\usepackage{$fontfamily$}
-$else$
-\usepackage{lmodern}
-$endif$
 
 $if(linestretch)$
 \usepackage{setspace}
@@ -155,7 +150,10 @@ $if(author)$
 \author{
     $for(author)$
         \IEEEauthorblockN{$author.name$} \\
-        \IEEEauthorblockA{$author.affiliation$}
+        \IEEEauthorblockA{%
+            $author.affiliation$ \\
+            $author.location$ \\
+            $author.email$}
         $sep$ \and
     $endfor$
 }

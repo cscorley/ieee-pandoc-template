@@ -1,7 +1,7 @@
 PAPER 		= paper
 
 CLS_FILES	= $(shell find . -name '*.cls')
-TEX_FILES	= $(shell find . -name '*.tex')
+TEX_FILES	= $(shell find . -name '*.*tex')
 BIB_FILES	= $(shell find . -name '*.bib')
 FIG_FILES	= $(shell find ./figures)
 MD_FILES	= $(shell find ./sections -name '*.md' | sort)
