@@ -13,7 +13,7 @@ CLS_FILES	= $(shell find . -name '*.cls')
 TEX_FILES	= $(shell find . -name '*.tex')
 BIB_FILES	= $(shell find . -name '*.bib')
 FIG_FILES	= $(shell find ./figures)
-MD_FILES	= $(shell find . -name '*.md' | sort)
+MD_FILES	= $(shell find ./sections -name '*.md' | sort)
 EXTRA_FILES	= $(shell find ./extra -name '*.md' | sort)
 
 DEP_FILES	= Makefile metadata.yaml $(CLS_FILES) $(BIB_FILES) $(GFX_FILES) $(MD_FILES) $(FIG_FILES)
