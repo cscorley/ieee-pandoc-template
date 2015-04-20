@@ -4,6 +4,18 @@ hi, [welcome to heck](https://youtu.be/Im6A_eTF01s?t=745)
 
 todo:
 
+## quirks with pandoc & IEEEtrans
+
+### tables
+
+Don't, not yet. Pandoc uses `longtable`, which IEEEtrans explodes.
+Just put in tables using pure LaTeX.
+
+### figures
+
+They will work fine if your figure is small and fits in one column. otherwise,
+use LaTeX.
+
 ## usage
 
 ### metadata
@@ -27,12 +39,14 @@ Just run `make`. Or look at `Makefile` and draw your own conclusions.
 If you have some extra packages or LaTeX you want to define, throw it into
 `custom.latex`. It'll be inserted before the document environment begins.
 
+
 ### arxiv uploading
 
 You can upload directly to arxiv after compiling. upload the `paper.tex` and
 `paper.bbl` files along with any figures. I set `graphicspath` in
 `template.latex` to make the figures folder work on arxiv without needing to
 edit stuff, but you can put them wherever suits you in `custom.latex`.
+
 
 ## contributing
 
