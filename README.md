@@ -3,8 +3,12 @@
 hi, [welcome to heck](https://youtu.be/Im6A_eTF01s?t=745)
 
 todo:
+  - journal
+  - compsoc
 
 ## quirks with pandoc & IEEEtrans
+
+for the most part, this only works in `conference` mode. 
 
 ### tables
 
