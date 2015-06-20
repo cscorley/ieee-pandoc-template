@@ -20,6 +20,9 @@ keyword:
       - yeah yeah yeah
       - no no no
 
+graphics: yes
+numbersections: yes
+
 abstract: |
     lorem buttsum
 

@@ -32,7 +32,7 @@ $(PAPER).tex: $(DEP_FILES)
 		--template=./template.latex \
 		-H custom.latex \
 		--from=markdown \
-		metadata.yaml $(MD_FILES) -o $(PAPER).tex
+		metadata.yaml $(MD_FILES) -o $(PAPER).tex || (rm $(PAPER).tex && false)
 
 tidy:
 	$(RM) *.aux
