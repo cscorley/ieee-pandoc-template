@@ -2,6 +2,8 @@
 
 butts [@Corley-etal_2011]
 
+\footnote{This is a footnote about butts.}
+
 ![Cool figure](example) {.two}
 
 # Conclusion
